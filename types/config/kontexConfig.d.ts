@@ -1,4 +1,4 @@
-interface KontexConfig {
+declare interface KontexConfig {
     app: {
         name: string;
         description: string;
