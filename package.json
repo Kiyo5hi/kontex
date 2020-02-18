@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Just another CMS in Node.JS",
   "main": "built/main.js",
-  "types": "./types",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
