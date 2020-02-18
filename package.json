@@ -1,0 +1,40 @@
+{
+  "name": "kontex",
+  "version": "0.0.1",
+  "description": "Just another CMS in Node.JS",
+  "main": "built/main.js",
+  "types": "./types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node built/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiyo5hi/kontex.git"
+  },
+  "author": "Takahashi Kiyoshi",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Kiyo5hi/kontex/issues"
+  },
+  "homepage": "https://github.com/Kiyo5hi/kontex#readme",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "mongoose": "^5.9.0",
+    "swig-templates": "^2.0.3",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.1",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa-views": "^2.0.4",
+    "@types/koa__router": "^8.0.2",
+    "@types/mongoose": "^5.7.1"
+  }
+}

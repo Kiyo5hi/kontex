@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2015",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./built",
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationDir": "./types"
+  },
+  "include": ["./src/**/*"]
+}
