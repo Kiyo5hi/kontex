@@ -4,6 +4,7 @@ interface KontexConfig {
     description: string;
     baseUrl: string;
     session_salt: [string];
+    theme: import('../themes/kontexTheme').KontexTheme;
   };
   database: {
     uri: string;

@@ -32,8 +32,17 @@ export class App {
 
   private async useMiddlewares() {
     this.app.use(logger());
-    this.app.use(serve("public"));
-    this.app.use(views("views", { autoRender: true, map: { html: "swig" } }));
+
+    let staticFolders = this.config.app.theme.staticFolder;
+    for (let i = 0; i < staticFolders.length; i++) {
+      const path = './built/themes/' + this.config.app.theme.name + '/' + staticFolders[i];
+      this.app.use(serve(path));
+    }
+
+    let view = this.config.app.theme.viewFolder;
+    view = './built/themes/' + this.config.app.theme.name + '/' + view;
+    let viewMapping = this.config.app.theme.viewMapping;
+    this.app.use(views(view, { autoRender: true, map: viewMapping }));
   }
 
   private async addRoutes(routers: Router[]) {

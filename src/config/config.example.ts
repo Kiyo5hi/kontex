@@ -3,7 +3,8 @@ export const CONFIG = {
     name: "Kontex",
     description: "A simple CMS.",
     baseUrl: "localhost",
-    session_salt: ["Kontex", "KoaJS"]
+    session_salt: ["Kontex", "KoaJS"],
+    theme: "transitive",
   },
   database: {
     uri:
