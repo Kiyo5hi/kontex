@@ -16,8 +16,7 @@
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "declaration": true,
-    "declarationDir": "./types"
+    "sourceMap": true,
   },
   "include": ["./src/**/*"]
 }
