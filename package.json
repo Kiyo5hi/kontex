@@ -5,8 +5,9 @@
   "main": "built/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node built/main.js"
+    "build": "tsc & node copy-files.js",
+    "start": "node built/main.js",
+    "cp-theme": "cp src/themes/**/"
   },
   "repository": {
     "type": "git",
