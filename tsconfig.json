@@ -1,22 +1,17 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2015",
-    "moduleResolution": "Node",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "outDir": "./built",
-    "noImplicitReturns": true,
+    "module": "commonjs",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
     "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
   },
-  "include": ["./src/**/*"]
+  "include": ["src/**/*"]
 }
