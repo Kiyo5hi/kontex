@@ -2,7 +2,6 @@ import logger from "./logger";
 import dotenv from "dotenv";
 import fs from "fs";
 import { opts } from "koa-session";
-import { User } from "../models/User";
 
 if (fs.existsSync(".env")) {
   logger.debug("Using .env file to supply config environment variables");
@@ -39,9 +38,4 @@ export const SESSION_CONFIG: Partial<opts> = {
   signed: true,
   rolling: true,
   renew: false,
-  store: {
-    get: null,
-    set: null,
-    destroy: null,
-  },
 };
